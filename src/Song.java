@@ -1,20 +1,42 @@
 import java.util.Date;
 
-public class Song {
+public class Song implements Comparable<Song> {
 
     private String title;
-    private int ID;
+    private int id;
     private Date date;
     private String duration; //12:05
     private String imageCover;
     private String description;
-    enum Gender {
-        POP, TECHNO, ROCK, HARDROCK, INDIE, ACOUSTICS, PUNK
+    public static final String[] GENRE = {"POP", "TECHNO", "ROCK"};
+
+
+    public Song(String title, Date date, String duration, String imageCover, String description) {
+        this.title = title;
+        this.date = date;
+        this.duration = duration;
+        this.imageCover = imageCover;
+        this.description = description;
     }
 
-    public Song(String title) {
+    public Song(String title, String duration) {
         this.title = title;
+        this.duration = duration;
     }
+
+    public Song() {
+    }
+
+
+    @Override
+    public int compareTo(Song song) {
+        return duration.compareTo(song.getDuration());
+    }
+
+    public  int compareToo(Song s) {
+        return date.compareTo(s.getDate());
+    }
+
 
     public String getTitle() {
         return title;
@@ -25,11 +47,11 @@ public class Song {
     }
 
     public int getID() {
-        return ID;
+        return id;
     }
 
     public void setID(int ID) {
-        this.ID = ID;
+        this.id = ID;
     }
 
     public Date getDate() {
@@ -64,12 +86,11 @@ public class Song {
         this.description = description;
     }
 
-
     @Override
     public String toString() {
         return "Song{" +
                 "title='" + title + '\'' +
-                ", ID=" + ID +
+                ", ID=" + id +
                 ", date=" + date +
                 ", duration='" + duration + '\'' +
                 ", imageCover='" + imageCover + '\'' +
