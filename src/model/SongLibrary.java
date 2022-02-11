@@ -54,7 +54,7 @@ public class SongLibrary {
     }
 
     /**
-     * Se crea el metodo orderByDateAscending() para oordenar por fecha de forma ascendente
+     * Se crea el metodo orderByDateAscending() para ordenar por fecha de forma ascendente
      */
     public static void orderByDateAscending() {
         Arrays.sort(songs, new Song());
