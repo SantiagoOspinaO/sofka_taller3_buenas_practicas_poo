@@ -21,6 +21,7 @@ public class UIMenu {
                 System.out.println(i+1 + ". " + genres[i]);
             }
             System.out.println("4. All songs");
+            System.out.println("5. Crear Playlist");
             System.out.println("0. Salir");
             System.out.println(" ");
 
@@ -49,6 +50,9 @@ public class UIMenu {
                     System.out.println("Canciones disponibles en la Bilioteca");
                     SongLibrary.createSongs();
                     SongLibrary.showSongs();
+                    break;
+                case 5:
+                    System.out.println("Aquí estoy, we");
                     break;
                 case 0:
                     System.out.println("Salir");

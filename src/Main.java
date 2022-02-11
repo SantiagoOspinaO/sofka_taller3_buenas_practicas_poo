@@ -1,3 +1,5 @@
+import model.MusicGenre;
+import model.Song;
 import model.SongLibrary;
 import ui.UIMenu;
 
@@ -7,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) throws ParseException {
 
-        UIMenu.showMenu();
+        //UIMenu.showMenu();
        // SongLibrary.createSongs();
        // SongLibrary.orderByDateAscending();
        // System.out.println();
@@ -19,5 +21,8 @@ public class Main {
 //        System.out.println("");
 //        SongLibrary.orderByDurationDescending();
 //        PlayList.createAPlayList();
+
+        //SongLibrary.filterByGenre(MusicGenre.POP);
+        SongLibrary.filterByDate("2012");
     }
 }
