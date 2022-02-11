@@ -1,29 +1,22 @@
-import java.util.ArrayList;
+import model.SongLibrary;
+
+import java.text.ParseException;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
 
-
-        ArrayList<Object> songsParcial = new ArrayList<>();
-
-
-        Object variable1 = new Song("Hola, we");
-        Object variable2 = new Song("Hola");
-        Object variable3 = new Song("awdawdawd");
-        Object variable4 = new Song("awdawdaw");
-        Object variable5 = new Song("awdawdawdawd");
-
-        songsParcial.add(variable1);
-        songsParcial.add(variable2);
-        songsParcial.add(variable3);
-        songsParcial.add(variable4);
-        songsParcial.add(variable5);
-
-        System.out.println(songsParcial);
-
-
-
-
+//        UIMenu.showMenu();
+        SongLibrary.createSongs();
+        SongLibrary.orderByDateAscending();
+        System.out.println();
+        SongLibrary.orderByDateDescending();
+//        SongLibrary.showSongs();
+//        System.out.println("");
+//        SongLibrary.showInfoSong();
+//        SongLibrary.orderByDurationAscending();
+//        System.out.println("");
+//        SongLibrary.orderByDurationDescending();
+//        PlayList.createAPlayList();
     }
 }
