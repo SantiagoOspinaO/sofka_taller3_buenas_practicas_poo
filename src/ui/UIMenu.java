@@ -26,8 +26,8 @@ public class UIMenu {
                 System.out.println(i + 1 + ". " + genres[i]);
             }
             System.out.println("::Opciones::");
-            System.out.println("4. Listar todas las canciones");
-            System.out.println("5. Crear una play list");
+            System.out.println("6. Listar todas las canciones");
+            System.out.println("7. Crear una play list");
             System.out.println("0. Salir");
 
             System.out.print("--> ");
@@ -57,16 +57,31 @@ public class UIMenu {
                     break;
                 case 4:
                     System.out.println("-----------------------------------------------------------");
+                    System.out.println("|                        GENERO RAP                       |");
+                    System.out.println("-----------------------------------------------------------");
+                    SongLibrary.filterByGenre(MusicGenre.HARDSTYLE);
+                    UIMenu.showOptionsPlayListMenu();
+                case 5:
+                    System.out.println("-----------------------------------------------------------");
+                    System.out.println("|                    GENERO ACUSTICO                       |");
+                    System.out.println("-----------------------------------------------------------");
+                    SongLibrary.filterByGenre(MusicGenre.HARDSTYLE);
+                    UIMenu.showOptionsPlayListMenu();
+                    break;
+                case 6:
+                    System.out.println("-----------------------------------------------------------");
                     System.out.println("|         Canciones disponibles en la Bilioteca           |");
                     System.out.println("-----------------------------------------------------------");
                     SongLibrary.showInfoSong();
                     UIMenu.showOptionsPlayListMenu();
                     break;
-                case 5:
+                case 7:
                     System.out.println("-----------------------------------------------------------");
                     System.out.println("|                    Creando Playlist                     |");
                     System.out.println("-----------------------------------------------------------");
+                    System.out.println(" ");
                     SongLibrary.showSongs();
+                    System.out.println(" ");
                     showCreatePlayList();
                     UIMenu.showOptionsPlayListMenu();
                     break;
@@ -121,7 +136,6 @@ public class UIMenu {
     }
 
     public static void showCreatePlayList() {
-
         int response = 0;
         PlayList playList = new PlayList();
         do {
@@ -131,16 +145,11 @@ public class UIMenu {
             System.out.print("--> ");
             response = Integer.valueOf(sc.nextLine());
 
-            if (response == 0) {
-                break;
-            } else if (response == 1) {
+            if (response != 0) {
                 System.out.println("Canción agregada con éxito.");
-                playList.createPlaylist(1);
-            } else if (response == 2) {
-                System.out.println("Canción agregada con éxito.");
-                playList.createPlaylist(2);
+                playList.createPlaylist(response);
             }
-
+            System.out.println(" ");
         } while (response != 0);
 
     }

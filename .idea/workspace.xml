@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50b09aa4-7685-498c-9136-12ce6639bbd6" name="Changes" comment="Se actualiza la clase UIMenu y la clase SongLibrary">
+    <list default="true" id="50b09aa4-7685-498c-9136-12ce6639bbd6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SongLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SongLibrary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\FervKa\Desktop\Programación\sofka_taller3_buenas_practicas_poo\src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -90,14 +96,7 @@
       <option name="project" value="LOCAL" />
       <updated>1644633411642</updated>
     </task>
-    <task id="LOCAL-00004" summary="Se actualiza la clase UIMenu y la clase SongLibrary">
-      <created>1644689232194</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1644689232194</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,7 +114,6 @@
     <MESSAGE value="Se actualiza el proyecto agregando las clases SongLibrary, PlayList, y se inicia la interfaz de usuario." />
     <MESSAGE value="Se actualiza el proyecto agregando la clase Enum MusicGenre, además se actualiza SongLibrary agregando los metodos de ordenar por duracion y fecha de forma ascendente y descendente." />
     <MESSAGE value="Se actualiza la clase UIMenu" />
-    <MESSAGE value="Se actualiza la clase UIMenu y la clase SongLibrary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se actualiza la clase UIMenu y la clase SongLibrary" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se actualiza la clase UIMenu" />
   </component>
 </project>
