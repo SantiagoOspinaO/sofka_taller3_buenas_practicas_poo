@@ -36,7 +36,7 @@ public class SongLibrary {
     /**
      * Se crea el metodo orderByDurationAscending para ordenar por duration de forma ascendente
      */
-    public static void orderByDurationAscending() {
+    public static void sortByDurationAscending() {
         Arrays.sort(songs);
         for (Song song : songs){
             System.out.println(song);
@@ -46,7 +46,7 @@ public class SongLibrary {
     /**
      * Se crea el metodo orderByDurationDescending para ordenar por duration de forma descendente
      */
-    public static void orderByDurationDescending() {
+    public static void sortByDurationDescending() {
         Arrays.sort(songs);
         for (int i = songs.length-1; i >= 0; i--) {
             System.out.println(songs[i]);
@@ -56,7 +56,7 @@ public class SongLibrary {
     /**
      * Se crea el metodo orderByDateAscending() para oordenar por fecha de forma ascendente
      */
-    public static void orderByDateAscending() {
+    public static void sortByDateAscending() {
         Arrays.sort(songs, new Song());
         for (Song song : songs) {
             System.out.println(song);
@@ -66,7 +66,7 @@ public class SongLibrary {
     /**
      * Se crea el metodo orderByDateDescending para ordenar por fecha de forma descendente
      */
-    public static void orderByDateDescending() {
+    public static void sortByDateDescending() {
         Arrays.sort(songs, new Song());
         for (int i = songs.length-1; i >= 0; i--) {
             System.out.println(songs[i]);
