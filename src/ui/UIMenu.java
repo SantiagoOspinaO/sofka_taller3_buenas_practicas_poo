@@ -1,6 +1,7 @@
 package ui;
 
 import model.MusicGenre;
+import model.PlayList;
 import model.SongLibrary;
 
 import java.util.Scanner;
@@ -59,8 +60,9 @@ public class UIMenu {
                     break;
                 case 5:
                     System.out.println("-----------------------------------------------------------");
-                    System.out.println("|                   Crear una Play List                   |");
+                    System.out.println("|                    Creando Playlist                     |");
                     System.out.println("-----------------------------------------------------------");
+                    SongLibrary.showSongs();
                     UIMenu.showOptionsPlayListMenu();
                     break;
                 case 0:
@@ -92,6 +94,7 @@ public class UIMenu {
 
             switch (response) {
                 case 1:
+                    showCreatePlayList();
                     break;
                 case 2:
                     break;
@@ -105,6 +108,30 @@ public class UIMenu {
             }
 
         } while (response != 0);
+
+    }
+
+
+    public static void showCreatePlayList(){
+        int response = 0;
+        PlayList playList = new PlayList();
+
+        do {
+
+            System.out.println("Ingrese el número de la canción a agregar en la PlayList");
+            System.out.println("0. Para salir.");
+            Scanner sc = new Scanner(System.in);
+            System.out.print("--> ");
+            response = Integer.valueOf(sc.nextLine());
+
+            if(response == 1){
+                playList.createPlaylist(1);
+                System.out.println("Canción agregada con éxito.");
+            }else if (response == 2){
+                playList.createPlaylist(2);
+                System.out.println("Canción agregada con éxito.");
+            }
+        }while (response !=0);
 
     }
 }
