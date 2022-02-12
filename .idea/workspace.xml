@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50b09aa4-7685-498c-9136-12ce6639bbd6" name="Changes" comment="Se actualiza la clase UIMenu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SongLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SongLibrary.java" afterDir="false" />
-    <list default="true" id="50b09aa4-7685-498c-9136-12ce6639bbd6" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_02_2022_8_48_p__m___Changes_.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_02_2022_8_53_p__m___Changes_.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_02_2022_9_08_p__m___Changes_.xml" afterDir="false" />
@@ -16,6 +13,8 @@
       <change beforePath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/model/SongLibrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/model/SongLibrary.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/ui/UIMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/ui/UIMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/PlayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SongLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SongLibrary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

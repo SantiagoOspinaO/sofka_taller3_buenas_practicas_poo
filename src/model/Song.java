@@ -23,10 +23,11 @@ public class Song implements Comparable<Song>, Comparator<Song> {
         this.description = Objects.requireNonNull(description);
     }
 
-    public Song(String title, String duration, String date)  {
+    public Song(String title, String duration, String date, MusicGenre genre)  {
         this.title = title;
         this.duration = duration;
         this.date = date;
+        this.genre = genre;
     }
 
     public Song(MusicGenre genre, String title) {
@@ -102,6 +103,10 @@ public class Song implements Comparable<Song>, Comparator<Song> {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public MusicGenre getGenre() {
+        return genre;
     }
 
     @Override
