@@ -1,7 +1,13 @@
 package model;
 
-import javax.swing.*;
-import java.awt.*;
+/**
+ * Importanciones para la utilidad del código.
+ */
+
+/**
+ * @authors Stiven Suárez Marín - Santiago Ospina
+ */
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -24,7 +30,7 @@ public class SongLibrary {
         Song song2 = new Song("Believer", "3:37", "imaginedragon.png", MusicGenre.POP, "2017/03/07", "Canción hecha por Imagine Dragons.");
         Song song3 = new Song("Humo", "4:06", "rupatrupa.png", MusicGenre.ACOUSTIC, "2017/05/12", "Canción hecha por Rupatrupa.");
         Song song4 = new Song("Línea Recta", "3:38", "noisferatu.png", MusicGenre.RAP, "2018/10/19", "Canción hecha por Noiseferatu.");
-        Song song5 = new Song("Can't Get You out of My Head", "4:04f", "annenMayKantereit.png", MusicGenre.POP, "2019/12/20", "Canción en cover por AnnenMayKantereit x Parcels");
+        Song song5 = new Song("Can't Get You out of My Head", "4:04", "annenMayKantereit.png", MusicGenre.POP, "2019/12/20", "Canción en cover por AnnenMayKantereit x Parcels");
         Song song6 = new Song("Maldita Dulzura - Open Mic", "11:20", "vetusta.png", MusicGenre.HARDSTYLE, "2016/05/09", "Canción hecha por Vetusta Morla.");
 
 
