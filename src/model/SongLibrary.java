@@ -1,8 +1,6 @@
 package model;
 
 import java.util.Arrays;
-import java.util.List;
-import java.util.function.Predicate;
 
 public class SongLibrary {
 
@@ -10,14 +8,12 @@ public class SongLibrary {
 
     public static void createSongs(){
 
-        songs[0] = new Song("Name1", "2:15", "2018/05/30", MusicGenre.ROCK);
-        songs[1] = new Song("Name2", "2:00", "2018/05/15", MusicGenre.ROCK);
-        songs[2] = new Song("Name3", "3:02", "2020/03/25", MusicGenre.POP);
+        songs[0] = new Song("Name1", "2:15", "2018/05/30");
+        songs[1] = new Song("Name2", "2:00", "2018/05/15");
+        songs[2] = new Song("Name3", "3:02", "2020/03/25");
 
 //        songs.add(new Song(Song.Genre.ROCK, "Title"));
     }
-
-
 
     /**
      * Se crea el metodo showSongs para mostrar los nombres de las canciones.
@@ -45,7 +41,6 @@ public class SongLibrary {
         for (Song song : songs){
             System.out.println(song);
         }
-
     }
 
     /**
@@ -59,7 +54,7 @@ public class SongLibrary {
     }
 
     /**
-     * Se crea el metodo orderByDateAscending() para ordenar por fecha de forma ascendente
+     * Se crea el metodo orderByDateAscending() para oordenar por fecha de forma ascendente
      */
     public static void orderByDateAscending() {
         Arrays.sort(songs, new Song());
@@ -77,36 +72,5 @@ public class SongLibrary {
             System.out.println(songs[i]);
         }
     }
-
-    public static void filterByGenre(MusicGenre genre){
-
-        Song song1 = new Song("Name1", "2:15", "2018/05/30", MusicGenre.ROCK);
-        Song song4 = new Song("Name4", "2:15", "2018/05/30", MusicGenre.ROCK);
-        Song song5 = new Song("Name5", "2:15", "2018/05/30", MusicGenre.ROCK);
-        Song song2 = new Song("Name2", "2:15", "2018/05/30", MusicGenre.HARDSTYLE);
-        Song song3 = new Song("Name3", "2:15", "2018/05/30", MusicGenre.POP);
-
-        List<Song> listMusicAsArray = Arrays.asList(song1, song3, song2, song4,song5);
-
-        listMusicAsArray.stream().filter(Song -> Song.getGenre().equals(genre)).forEach(System.out::println);
-
-    }
-
-
-    public static void filterByDate(String date){
-
-        Song song1 = new Song("Name1", "2:15", "2017/05/30", MusicGenre.ROCK);
-        Song song4 = new Song("Name4", "2:15", "2012/05/30", MusicGenre.ROCK);
-        Song song5 = new Song("Name5", "2:15", "2016/05/30", MusicGenre.ROCK);
-        Song song2 = new Song("Name2", "2:15", "2018/05/30", MusicGenre.HARDSTYLE);
-        Song song3 = new Song("Name3", "2:15", "2012/05/30", MusicGenre.POP);
-        Song song6 = new Song("Name6", "2:15", "2016/05/30", MusicGenre.POP);
-
-        List<Song> listMusicAsArray = Arrays.asList(song1, song3, song2, song4,song5);
-
-        listMusicAsArray.stream().filter(Song -> Song.getDate().contains(date)).forEach(System.out::println);
-
-    }
-
 }
 

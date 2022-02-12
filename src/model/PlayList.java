@@ -1,30 +1,39 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class PlayList {
 
     private String namePlayList;
-    private ArrayList<PlayList> playLists = new ArrayList<>();
+    private static ArrayList<Song> playList;
+    static PlayList mainLibrary = new PlayList("", playList);
 
-    public PlayList(String namePlayList) {
+    public PlayList(String namePlayList, ArrayList<Song> playList) {
         this.namePlayList = namePlayList;
+        this.playList = playList;
     }
 
     public PlayList() {
     }
 
-    public static void createAPlayList(){
+    public static void createAPlayList() {
         Scanner response = new Scanner(System.in);
-        PlayList playList = new PlayList();
         System.out.print("Ingrese el nombre de la play list: ");
-        playList.setNamePlayList(response.nextLine());
-        playList.showInfo();
+        mainLibrary.setNamePlayList(response.nextLine());
+        mainLibrary.playList.add(new Song());
+        for (Song song : playList) {
+            System.out.println(song);
+        }
+        mainLibrary.showInfo();
     }
 
-    public void addSongsToPlaylist(){
-
+    public static void addSongsToPlaylist() {
+        mainLibrary.playList.add(new Song());
+        for (Song song : playList) {
+            System.out.println(song);
+        }
     }
 
     public void showInfo() {
