@@ -1,4 +1,6 @@
+import model.MusicGenre;
 import model.PlayList;
+import model.Song;
 import model.SongLibrary;
 import ui.UIMenu;
 
@@ -9,8 +11,9 @@ public class Main {
 
     public static void main(String[] args) throws ParseException {
 
-        UIMenu.showMenu();
-        SongLibrary.createSongs();
+        //UIMenu.showMenu();
+        //SongLibrary.createSongs();
+        //SongLibrary.showSongs();
 //        SongLibrary.orderByDateAscending();
 //        System.out.println();
 //        SongLibrary.orderByDateDescending();
@@ -26,5 +29,14 @@ public class Main {
 //        SongLibrary.createSongs();
 //        UIMenu.showOptionsPlayListMenu();
 
+
+        //SongLibrary.filterByDate("2017");
+
+        //PlayList playList = new PlayList();
+
+        //playList.createPlaylist(2);
+
+
+        UIMenu.showCreatePlayList();
     }
 }
