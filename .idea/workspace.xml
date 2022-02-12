@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="50b09aa4-7685-498c-9136-12ce6639bbd6" name="Changes" comment="Se actualiza el proyecto agregando la clase Enum MusicGenre, además se actualiza SongLibrary agregando los metodos de ordenar por duracion y fecha de forma ascendente y descendente.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/PlayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/UIMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UIMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
