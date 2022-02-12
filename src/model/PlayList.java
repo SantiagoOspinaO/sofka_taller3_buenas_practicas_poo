@@ -18,6 +18,5 @@ public class PlayList extends SongLibrary{
         for (int i = 0; i < playList.toArray().length ; i++) {
             System.out.println(playList.toArray()[i]);
         }
-
     }
 }
