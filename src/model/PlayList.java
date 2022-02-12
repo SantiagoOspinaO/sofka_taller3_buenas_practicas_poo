@@ -14,7 +14,6 @@ public class PlayList extends SongLibrary{
     public void createPlaylist(int indexMusic){
         SongLibrary.createSongs();
         playList.add(SongLibrary.songs[indexMusic]);
-        System.out.println(playList.toArray().length);
         for (int i = 0; i < playList.toArray().length ; i++) {
             System.out.println(playList.toArray()[i]);
         }

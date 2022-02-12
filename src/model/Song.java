@@ -10,29 +10,17 @@ public class Song implements Comparable<Song>, Comparator<Song> {
     private MusicGenre genre;
     private String date;
     private String duration;
-    private String imageCover; //nombre del archivo
+    private String imageCover;
     private String description;
 
 
-    public Song(String title, MusicGenre genre, String date, String duration, String imageCover, String description) {
+    public Song(String title, String duration, String imageCover, MusicGenre genre, String date, String description) {
         this.title = Objects.requireNonNull(title);
         this.genre = Objects.requireNonNull(genre);
         this.date = Objects.requireNonNull(date);
         this.duration = Objects.requireNonNull(duration);
         this.imageCover = Objects.requireNonNull(imageCover);
         this.description = Objects.requireNonNull(description);
-    }
-
-    public Song(String title, String duration, String date, MusicGenre genre)  {
-        this.title = title;
-        this.duration = duration;
-        this.date = date;
-        this.genre = genre;
-    }
-
-    public Song(MusicGenre genre, String title) {
-        this.genre = genre;
-        this.title = title;
     }
 
     public Song() {
@@ -72,14 +60,6 @@ public class Song implements Comparable<Song>, Comparator<Song> {
     public void setDate(String date) {
         this.date = date;
     }
-
-    //    public void setDate(Date date) throws ParseException {
-//        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-////        Date dateFormat = format.parse(date);
-////        String resultDate = dateFormat.toString();
-////        this.date = resultDate;
-//        String dateFormat = format.format(getDate());
-//    }
 
     public String getDuration() {
         return duration;
