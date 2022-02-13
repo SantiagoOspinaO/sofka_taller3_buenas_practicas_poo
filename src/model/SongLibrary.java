@@ -1,16 +1,15 @@
 package model;
 
 /**
- * Importanciones para la utilidad del código.
+ * Imports para la utilidad del código.
  */
-
-/**
- * @authors Stiven Suárez Marín - Santiago Ospina
- */
-
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Se crea la clase SongLibrary
+ * @authors Stiven Suárez Marín - Santiago Ospina
+ */
 public class SongLibrary {
 
     /**
@@ -18,32 +17,17 @@ public class SongLibrary {
      */
     public static Song songs[] = new Song[7];
 
-
     public static void createSongs() {
-
-
         /**
          * En este apartado se encuentran todas las canciones agregadas en la Biblioteca como predeterminadas.
          */
-        Song song0 = new Song("Agua y Mezcal", "3:47", "guitarricadela.png", MusicGenre.ACOUSTIC, "2016/06/27", "Cancion hecha por Guitarrica de la Fuente.");
-        Song song1 = new Song("Cerebros Destruidos", "2:39", "eskorbuto.png", MusicGenre.ROCK, "1986/05/30", "Canción hecha por Eskorbuto.");
-        Song song2 = new Song("Believer", "3:37", "imaginedragon.png", MusicGenre.POP, "2017/03/07", "Canción hecha por Imagine Dragons.");
-        Song song3 = new Song("Humo", "4:06", "rupatrupa.png", MusicGenre.ACOUSTIC, "2017/05/12", "Canción hecha por Rupatrupa.");
-        Song song4 = new Song("Línea Recta", "3:38", "noisferatu.png", MusicGenre.RAP, "2018/10/19", "Canción hecha por Noiseferatu.");
-        Song song5 = new Song("Can't Get You out of My Head", "4:04", "annenMayKantereit.png", MusicGenre.POP, "2019/12/20", "Canción en cover por AnnenMayKantereit x Parcels");
-        Song song6 = new Song("Maldita Dulzura - Open Mic", "11:20", "vetusta.png", MusicGenre.HARDSTYLE, "2016/05/09", "Canción hecha por Vetusta Morla.");
-
-
-        /**
-         * Este apartado es para agergar las canciones predefinidas a la lista de Songs.
-         */
-        songs[0] = song0;
-        songs[1] = song1;
-        songs[2] = song2;
-        songs[3] = song3;
-        songs[4] = song4;
-        songs[5] = song5;
-        songs[6] = song6;
+        songs[0] = new Song("Agua y Mezcal", "3:47", "guitarricadela.png", MusicGenre.ACOUSTIC, "2016/06/27", "Cancion hecha por Guitarrica de la Fuente.");
+        songs[1] = new Song("Cerebros Destruidos", "2:39", "eskorbuto.png", MusicGenre.ROCK, "1986/05/30", "Canción hecha por Eskorbuto.");
+        songs[2] = new Song("Believer", "3:37", "imaginedragon.png", MusicGenre.POP, "2017/03/07", "Canción hecha por Imagine Dragons.");
+        songs[3] = new Song("Humo", "4:06", "rupatrupa.png", MusicGenre.ACOUSTIC, "2017/05/12", "Canción hecha por Rupatrupa.");
+        songs[4] = new Song("Línea Recta", "3:38", "noisferatu.png", MusicGenre.RAP, "2018/10/19", "Canción hecha por Noiseferatu.");
+        songs[5] = new Song("Can't Get You out of My Head", "4:04", "annenMayKantereit.png", MusicGenre.POP, "2019/12/20", "Canción en cover por AnnenMayKantereit x Parcels");
+        songs[6] = new Song("Maldita Dulzura - Open Mic", "11:20", "vetusta.png", MusicGenre.HARDSTYLE, "2016/05/09", "Canción hecha por Vetusta Morla.");
     }
 
     /**

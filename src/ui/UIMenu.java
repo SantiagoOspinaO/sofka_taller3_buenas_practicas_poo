@@ -105,7 +105,9 @@ public class UIMenu {
             System.out.println("1. Crear una play list");
             System.out.println("2. Ordenar [duracion ascendente]");
             System.out.println("3. Ordenar [duracion descendente]");
-            System.out.println("4. Filtrar [año]");
+            System.out.println("4. Ordenar [fecha ascendente]");
+            System.out.println("5. Ordenar [fecha descendente]");
+            System.out.println("6. Filtrar [año]");
             System.out.println("0. Salir");
 
             System.out.print("--> ");
@@ -122,6 +124,12 @@ public class UIMenu {
                     SongLibrary.sortByDurationDescending();
                     break;
                 case 4:
+                    SongLibrary.sortByDateAscending();
+                    break;
+                case 5:
+                    SongLibrary.sortByDateDescending();
+                    break;
+                case 6:
                     System.out.println("Ingresa el año que quieres filtrar");
                     String year = sc.nextLine();
                     SongLibrary.filterByDate(year);
