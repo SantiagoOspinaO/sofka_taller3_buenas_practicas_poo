@@ -25,7 +25,6 @@ public class Song implements Comparable<Song>, Comparator<Song> {
     private String imageCover;
     private String description;
 
-
     /**
      * Instancia de una nueva cancion.
      *

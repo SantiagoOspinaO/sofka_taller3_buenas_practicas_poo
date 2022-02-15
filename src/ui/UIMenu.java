@@ -10,7 +10,9 @@ import java.util.Scanner;
  * Se crea la clase UIMenu con el objetivo de crear una interfaz para el usuario.
  *
  * @version 1.00.000 2022-02-14
+ *
  * @authors Santiago Ospina Osorio - santiago.m200@outlook.es / Stiven Suárez Marín - ferbohi@outlook.com
+ *
  * @since 1.00.000 2022-02-14
  */
 public class UIMenu {
@@ -22,10 +24,11 @@ public class UIMenu {
 
     /**
      * Se crea el  metodo showMenu con el objetivo de mostrar al usuario el menu inicial.
-     * <p>
-     * showInitialMenu();
+     *
+     *    showInitialMenu();
      *
      * @authors Santiago Ospina Osorio - santiago.m200@outlook.es / Stiven Suárez Marín - ferbohi@outlook.com
+     *
      * @since 1.00.000 2022-02-14
      */
     public static void showInitialMenu() {
@@ -126,10 +129,11 @@ public class UIMenu {
     /**
      * Se crea el  metodo showOptionsForAllSongsMenu con el objetivo de mostrar al usuario las opciones que tiene al listar
      * todas las canciones.
-     * <p>
-     * showOptionsForAllSongsMenu();
+     *
+     *    showOptionsForAllSongsMenu();
      *
      * @author Santiago Ospina Osorio - santiago.m200@outlook.es
+     *
      * @since 1.00.000 2022-02-14
      */
     public static void showOptionsForAllSongsMenu() {
@@ -194,10 +198,11 @@ public class UIMenu {
     /**
      * Se crea el  metodo showOptionsWithinAGenre con el objetivo de mostrar al usuario las opciones que tiene al seleccionar
      * un genero.
-     * <p>
-     * showOptionsWithinAGenre();
      *
-     * @authors Santiago Ospina Osorio - santiago.m200@outlook.es / Stiven Suárez Marín - ferbohi@outlook.com
+     *    showOptionsWithinAGenre();
+     *
+     * @authors Santiago Ospina Osorio - santiago.m200@outlook.es / Stiven Suárez Marín - ferbohi@outlook.com}
+     *
      * @since 1.00.000 2022-02-14
      */
     public static void showOptionsWithinAGenre() {
@@ -234,10 +239,11 @@ public class UIMenu {
 
     /**
      * Se crea el  metodo showCreatePlayList con el objetivo de mostrar al usuario como agregar una cancion a un play list.
-     * <p>
-     * showCreatePlayList();
+     *
+     *    showCreatePlayList();
      *
      * @authors Santiago Ospina Osorio - santiago.m200@outlook.es / Stiven Suárez Marín - ferbohi@outlook.com
+     *
      * @since 1.00.000 2022-02-14
      */
     public static void showCreatePlayList() {
