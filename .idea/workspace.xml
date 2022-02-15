@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="50b09aa4-7685-498c-9136-12ce6639bbd6" name="Changes" comment="Se actualiza la clase UIMenu">
+    <list default="true" id="50b09aa4-7685-498c-9136-12ce6639bbd6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-    <list default="true" id="50b09aa4-7685-498c-9136-12ce6639bbd6" name="Changes" comment="Se actualiza el metodo createSongs() y se implementan los metodos sortByDateAscending() y sortByDateDescending() en la clase UIMenu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/model/MusicGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/model/MusicGenre.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/model/PlayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/model/PlayList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/model/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/taller3_buenas_practicas_poo/model/Song.class" afterDir="false" />
@@ -18,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/src/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Song.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/SongLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SongLibrary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/UIMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/UIMenu.java" afterDir="false" />
->>>>>>> 02e7973e34fc90ad6b0b568e82d6c1fa4393c82d
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
