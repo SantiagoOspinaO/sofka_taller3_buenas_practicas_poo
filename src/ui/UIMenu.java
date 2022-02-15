@@ -10,9 +10,7 @@ import java.util.Scanner;
  * Se crea la clase UIMenu con el objetivo de crear una interfaz para el usuario.
  *
  * @version 1.00.000 2022-02-14
- *
  * @authors Santiago Ospina Osorio - santiago.m200@outlook.es / Stiven Suárez Marín - ferbohi@outlook.com
- *
  * @since 1.00.000 2022-02-14
  */
 public class UIMenu {
@@ -20,15 +18,14 @@ public class UIMenu {
     /**
      * Se instancia un sc de tipo Scanner estatico para acceder a este sin tener que volverlo a instanciar.
      */
-    static  Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
     /**
      * Se crea el  metodo showMenu con el objetivo de mostrar al usuario el menu inicial.
-     *
-     *    showInitialMenu();
+     * <p>
+     * showInitialMenu();
      *
      * @authors Santiago Ospina Osorio - santiago.m200@outlook.es / Stiven Suárez Marín - ferbohi@outlook.com
-     *
      * @since 1.00.000 2022-02-14
      */
     public static void showInitialMenu() {
@@ -41,6 +38,8 @@ public class UIMenu {
         System.out.println("-----------------------------------------------------------");
 
         int response = 0;
+
+
         do {
             System.out.println("::Selecciona tu genero preferido::");
             for (int i = 0; i < genres.length; i++) {
@@ -52,7 +51,16 @@ public class UIMenu {
             System.out.println("0. Salir");
 
             System.out.print("--> ");
-            response = Integer.valueOf(sc.nextLine());
+            try {
+                response = Integer.valueOf(sc.nextLine());
+                if(response >= 8){
+                    System.out.println("Ups, parece que ingresaste una opción que no se encuentra en la lista.\n" +
+                            "Por favor intenta ingresar un número de la lista.\n");
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.println("Ups, ingresaste un número y/o, letra inválida, ¡por favor verifícala!");
+            }
 
             switch (response) {
                 case 1:
@@ -109,8 +117,6 @@ public class UIMenu {
                 case 0:
                     System.out.println("¡¡ Vuelve pronto !!");
                     break;
-                default:
-                    System.out.println("Seleccione una opcion valida");
             }
 
         } while (response != 0);
@@ -120,11 +126,10 @@ public class UIMenu {
     /**
      * Se crea el  metodo showOptionsForAllSongsMenu con el objetivo de mostrar al usuario las opciones que tiene al listar
      * todas las canciones.
-     *
-     *    showOptionsForAllSongsMenu();
+     * <p>
+     * showOptionsForAllSongsMenu();
      *
      * @author Santiago Ospina Osorio - santiago.m200@outlook.es
-     *
      * @since 1.00.000 2022-02-14
      */
     public static void showOptionsForAllSongsMenu() {
@@ -142,7 +147,18 @@ public class UIMenu {
             System.out.println("0. Salir");
 
             System.out.print("--> ");
-            response = Integer.valueOf(sc.nextLine());
+
+            try {
+                response = Integer.valueOf(sc.nextLine());
+
+                if(response >= 8){
+                    System.out.println("Ups, parece que ingresaste una opción que no se encuentra en la lista.\n" +
+                            "Por favor intenta ingresar un número de la lista.");
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.println("Ups, ingresaste un número y/o, letra inválida, ¡por favor verifícala!");
+            }
 
             switch (response) {
                 case 1:
@@ -178,11 +194,10 @@ public class UIMenu {
     /**
      * Se crea el  metodo showOptionsWithinAGenre con el objetivo de mostrar al usuario las opciones que tiene al seleccionar
      * un genero.
-     *
-     *    showOptionsWithinAGenre();
+     * <p>
+     * showOptionsWithinAGenre();
      *
      * @authors Santiago Ospina Osorio - santiago.m200@outlook.es / Stiven Suárez Marín - ferbohi@outlook.com
-     *
      * @since 1.00.000 2022-02-14
      */
     public static void showOptionsWithinAGenre() {
@@ -219,11 +234,10 @@ public class UIMenu {
 
     /**
      * Se crea el  metodo showCreatePlayList con el objetivo de mostrar al usuario como agregar una cancion a un play list.
-     *
-     *    showCreatePlayList();
+     * <p>
+     * showCreatePlayList();
      *
      * @authors Santiago Ospina Osorio - santiago.m200@outlook.es / Stiven Suárez Marín - ferbohi@outlook.com
-     *
      * @since 1.00.000 2022-02-14
      */
     public static void showCreatePlayList() {
